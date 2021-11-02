@@ -24,4 +24,44 @@ class Resize_to_visible(Extension):
         action.triggered.connect(self.action_triggered)
 
     def action_triggered(self):
-        pass  # your active code goes here.
+        root_node_childs = Krita.instance().activeDocument().rootNode().childNodes()
+        first = True
+
+        stack = root_node_childs
+
+        while stack:
+            node = stack.pop()
+            is_leaf = len(node.childNodes()) == 0
+
+            if is_leaf:
+                if not node.visible():
+                    continue
+
+                nb = node.bounds()
+
+                if first:
+                    left = nb.left()
+                    top = nb.top()
+                    right = nb.right()
+                    bottom = nb.bottom()
+                    first = False
+                else:
+                    left = min(nb.left(), left)
+                    top = min(nb.top(), top)
+                    right = max(nb.right(), right)
+                    bottom = max(nb.bottom(), bottom)
+            else:
+                for c in node.childNodes():
+                    stack.append(c)
+
+        # Avoid using
+        # Krita.instance().activeDocument().crop()
+        # because it delete the part that it outside the calculated zone in non-visible layers.
+        # This may be unexpected to the user.
+
+        Krita.instance().activeDocument().resizeImage(
+            left,
+            top,
+            right - left,
+            bottom - top
+        );
