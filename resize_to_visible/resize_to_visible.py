@@ -24,6 +24,8 @@ class Resize_to_visible(Extension):
         action.triggered.connect(self.action_triggered)
 
     def action_triggered(self):
+        # My code, the rest was generated using Krita Script Starter plugin
+
         root_node_childs = Krita.instance().activeDocument().rootNode().childNodes()
         first = True
 
@@ -64,4 +66,4 @@ class Resize_to_visible(Extension):
             top,
             right - left,
             bottom - top
-        );
+        )

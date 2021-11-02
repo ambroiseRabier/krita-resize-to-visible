@@ -6,6 +6,8 @@ the document (also named image/canvas) for them to fit into.
 It only take visible layers. It does not crop anything (nothing ever get deleted). Meaning, running this script after re-enabling a layer, that has something drawn
 outside the canvas, will enlarge the canvas.
 
+**It is basically a "trim to all visible layers" instead of "trim to current layer".**
+
 ## Use case
 
 It is useful when you make a sprite, and want to remove the unused space before exporting.
