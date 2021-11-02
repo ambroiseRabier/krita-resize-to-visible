@@ -50,3 +50,7 @@ Test with:
 - 2 frames in one layer + 1 layer no frame
 - 2 frames in one layer + 1 frame in another layer
 - 2 frames in one layer + 2 frames in another layer
+
+Test:
+- Make 3 frames or more in one layer. Spam the script / ctrl+z, every 3 or 4 you get one frame ignored, mostly the middle one, sometimes the last one.
+  To fix that you need to use `waitForDone` after changing frame.

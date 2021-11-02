@@ -33,6 +33,10 @@ class Resize_to_visible_animation(Extension):
         for i in range(0, Krita.instance().activeDocument().animationLength()):
             Krita.instance().activeDocument().setCurrentTime(i)
 
+            # Make sure to wait, as setCurrentTime seem to create some async behavior.
+            # Otherwise you might get some frames ignored.
+            Krita.instance().activeDocument().waitForDone()
+
             root_node_childs = Krita.instance().activeDocument().rootNode().childNodes()
 
             stack = root_node_childs
