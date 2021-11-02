@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--BBD's Krita Script Starter, Feb 2018 -->
+<head><title>resize_to_visible</title>
+</head>
+<body>
+<h3>Resize to visible</h3>
+It iterate on every leaf layer (layer without children), take their boundary, and calculate the minimum size of
+the document (also named image/canvas) for them to fit into.<br>
+<br>
+It only take visible layers. It does not crop anything (nothing ever get deleted). Meaning, running this script after re-enabling a layer, that has something drawn
+outside the canvas, will enlarge the canvas.<br>
+
+<h3>Usage</h3>
+Run the script in Tools --> Script --> Resize to visible
+
+<h3>Use case</h3>
+It is useful when you make a sprite, and want to remove the unused space before exporting.
+
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=resize_to_visible
+X-Python-2-Compatible=false
+X-Krita-Manual=Manual.html
+Name=resize_to_visible
+Comment=Resize canvas to all visible layers boundaries combined.
