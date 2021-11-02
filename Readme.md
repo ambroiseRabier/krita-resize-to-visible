@@ -1,3 +1,6 @@
+https://user-images.githubusercontent.com/16115874/139946442-25ed1507-06ad-4102-bd03-cc46bf086f24.mp4
+
+
 ## What it does
 
 It iterate on every leaf layer (layer without children), take their boundary, and calculate the minimum size of
@@ -8,9 +11,11 @@ outside the canvas, will enlarge the canvas.
 
 **It is basically a "trim to all visible layers" instead of "trim to current layer".**
 
+
 ## Use case
 
 It is useful when you make a sprite, and want to remove the unused space before exporting.
+
 
 ## Install
 
@@ -21,6 +26,7 @@ It is useful when you make a sprite, and want to remove the unused space before 
 `<your_installation_path>\share\krita\actions`.
 
 3. Restart Krita.
+
 
 ## Usage
 
