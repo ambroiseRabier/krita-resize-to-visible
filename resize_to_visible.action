@@ -16,4 +16,20 @@
         <statusTip></statusTip>
         </Action>
     </Actions>
+    <Actions category="Scripts">
+        <text>My Scripts</text>
+
+        <Action name="pykrita_resize_to_visible_animation">
+        <icon></icon>
+        <text>Resize to visible (animation)</text>
+        <whatsThis></whatsThis>
+        <toolTip></toolTip>
+        <iconText></iconText>
+        <activationFlags>1</activationFlags>
+        <activationConditions>0</activationConditions>
+        <shortcut></shortcut>
+        <isCheckable>false</isCheckable>
+        <statusTip></statusTip>
+        </Action>
+    </Actions>
 </ActionCollection>

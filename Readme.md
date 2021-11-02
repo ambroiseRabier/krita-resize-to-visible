@@ -14,22 +14,18 @@ It is useful when you make a sprite, and want to remove the unused space before 
 
 ## Install
 
+1. Copy `resize_to_visible.desktop` file and`resize_to_visible` folder to [Resources folder](https://docs.krita.org/en/reference_manual/resource_management.html#resource-management).  
+   Example: `%APPDATA%\krita\pykrita` for Window.
 
-`resize_to_visible.desktop` and `resize_to_visible` folder are to be put in `pykrita` folder
-in [Resources folder](https://docs.krita.org/en/reference_manual/resource_management.html#resource-management).
-
-Example: `%APPDATA%\krita\pykrita` for Window.
-
-
-`resize_to_visible.action` file go [there](https://docs.krita.org/en/user_manual/python_scripting/krita_python_plugin_howto.html#creating-configurable-keyboard-shortcuts)
+2. `resize_to_visible.action` file go into [your installation folder](https://docs.krita.org/en/user_manual/python_scripting/krita_python_plugin_howto.html#creating-configurable-keyboard-shortcuts):
 `<your_installation_path>\share\krita\actions`.
 
-
-Restart Krita.
+3. Restart Krita.
 
 ## Usage
 
-In the menu bar, `Tools -> Scripts -> Resize to Visible`
+In the menu bar, `Tools -> Scripts -> Resize to Visible`.  
+Use `Tools --> Script --> Resize to visible (animation)` to take in account all frames. It loop over the animation length.
 
 To setup a shortcut, go into `Configure Krita -> Keyboard Shortcuts -> Scripts -> My Scripts -> Resize to visible`
 

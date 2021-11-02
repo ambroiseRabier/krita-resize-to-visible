@@ -1,3 +1,5 @@
+# No animation
+
 ## 1
 
 1. Open Krita
@@ -39,3 +41,12 @@ A. Should have resize to right circle boundaries.
 B. Should have resized to boundaries of both circle combined.
 
 **Note**: When using group boundaries instead of Leaf node boundaries, it fail at B.
+
+
+# Animation
+
+Test with:
+- 2 frames in one layer.
+- 2 frames in one layer + 1 layer no frame
+- 2 frames in one layer + 1 frame in another layer
+- 2 frames in one layer + 2 frames in another layer
